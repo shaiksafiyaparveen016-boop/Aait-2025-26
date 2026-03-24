@@ -1,0 +1,40 @@
+# Importing packages
+import math
+import random
+import datetime
+import os
+import numpy as np
+import pandas as pd
+
+# Math package
+num = 16
+print("Square root of", num, ":", math.sqrt(num))
+print("Factorial of 5:", math.factorial(5))
+
+# Random package
+rand_num = random.randint(1, 50)
+print("Random number:", rand_num)
+
+# Datetime package
+now = datetime.datetime.now()
+print("Current Date and Time:", now)
+
+# OS package
+print("Current Directory:", os.getcwd())
+
+# NumPy package
+arr = np.array([10, 20, 30, 40])
+print("NumPy Array:", arr)
+print("Array Mean:", np.mean(arr))
+
+# Pandas package
+data = {
+    "Name": ["Alice", "Bob", "Charlie"],
+    "Marks": [85, 90, 88]
+}
+
+df = pd.DataFrame(data)
+print("\nStudent Data:")
+print(df)
+
+print("Average Marks:", df["Marks"].mean())
